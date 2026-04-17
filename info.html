@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>實用資訊 | 北京質感旅遊</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 導航 -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">北京質感之旅</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="spots.html">景點</a></li>
+        <li><a href="foods.html">美食</a></li>
+        <li><a href="itinerary.html">行程</a></li>
+        <li><a href="info.html">資訊</a></li>
+      </ul>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="detail-header">
+    <h1>實用資訊</h1>
+    <div class="detail-meta">
+      <span>📋 簽證</span>
+      <span>🚇 交通</span>
+      <span>🌤️ 天氣</span>
+    </div>
+  </header>
+
+  <!-- Info Content -->
+  <section class="info-section">
+    <div class="info-container">
+      <!-- 簽證 -->
+      <div class="info-block">
+        <h3>📋 簽證須知</h3>
+        <ul>
+          <li><strong>台灣居民</strong>：需辦理台胞證（多次往返）</li>
+          <li><strong>辦理時間</strong>：約 5-7 個工作天</li>
+          <li><strong>停留天數</strong>：單次最長 30 天</li>
+          <li><strong>費用</strong>：約 NT$1,500-2,000（視方案）</li>
+          <li><strong>代辦機構</strong>：各大旅行社或中信局</li>
+        </ul>
+      </div>
+
+      <!-- 交通 -->
+      <div class="info-block">
+        <h3>🚇 交通指南</h3>
+        <ul>
+          <li><strong>抵達北京</strong>：首都機場/大興機場（距離市區約 25-50 公里）</li>
+          <li><strong>機場交通</strong>：機場快線 NT$300 / 計程車 NT$500-800</li>
+          <li><strong>市內交通</strong>：地鐵發達，建議購買一卡通（交通卡）</li>
+          <li><strong>地鐵票價</strong>：按里程收費，約 ¥3-7</li>
+          <li><strong>計程車</strong>：起跳 ¥13，每公里 ¥2.3</li>
+        </ul>
+      </div>
+
+      <!-- 天氣 -->
+      <div class="info-block">
+        <h3>🌤️ 北京天氣</h3>
+        <ul>
+          <li><strong>春季（3-5月）</strong>：天氣干燥，多風沙，溫度 10-25°C</li>
+          <li><strong>夏季（6-8月</strong>：炎熱多雨，溫度 25-35°C，最高可达 40°C</li>
+          <li><strong>秋季（9-11月）</strong>：最適合旅遊，天氣晴朗，溫度 10-20°C</li>
+          <li><strong>冬季（12-2月）</strong>：寒冷乾燥，溫度 -10 到 5°C，需備寒衣</li>
+          <li><strong>建議攜帶</strong>：防曬、保濕、帽子、圍巾</li>
+        </ul>
+      </div>
+
+      <!-- 緊急聯絡 -->
+      <div class="info-block">
+        <h3>🚨 緊急聯絡</h3>
+        <ul>
+          <li><strong>中國急救</strong>：120</li>
+          <li><strong>報警</strong>：110</li>
+          <li><strong>火警</strong>：119</li>
+          <li><strong>台灣駐北京辦事處</strong>：+86 10-8868-8900</li>
+          <li><strong>外交部領事保護</strong>：+886 2-2878-7777</li>
+        </ul>
+      </div>
+
+      <!-- 時差 -->
+      <div class="info-block">
+        <h3>🕐 時差與語言</h3>
+        <ul>
+          <li><strong>時差</strong>：北京時間 = 台灣時間 - 0 小時（無時差）</li>
+          <li><strong>語言</strong>：中文（普通話）</li>
+          <li><strong>英文</strong>：年輕人大多可簡單溝通</li>
+          <li><strong>貨幣</strong>：人民幣（CNY/RMB），可使用支付寶、WeChat Pay</li>
+          <li><strong>電壓</strong>：220V，插座為三孔（需轉接頭）</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h4>北京質感旅遊</h4>
+        <p style="opacity: 0.8; line-height: 1.8;">探索千年古都的奢華風貌，體驗不一樣的北京之旅。</p>
+      </div>
+      <div>
+        <h4>快速連結</h4>
+        <ul class="footer-links">
+          <li><a href="spots.html">景點推薦</a></li>
+          <li><a href="foods.html">美食推薦</a></li>
+          <li><a href="itinerary.html">行程安排</a></li>
+          <li><a href="info.html">實用資訊</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>實用資訊</h4>
+        <ul class="footer-links">
+          <li><a href="info.html">簽證須知</a></li>
+          <li><a href="info.html">交通指南</a></li>
+          <li><a href="info.html">天氣資訊</a></li>
+          <li><a href="info.html">緊急聯絡</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 北京質感旅遊. Designed with ♥ in Taiwan.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      var navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
