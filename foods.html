@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美食列表 | 北京質感旅遊</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 導航 -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">北京質感之旅</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="spots.html">景點</a></li>
+        <li><a href="foods.html">美食</a></li>
+        <li><a href="itinerary.html">行程</a></li>
+        <li><a href="info.html">資訊</a></li>
+      </ul>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="detail-header">
+    <h1>北京美食</h1>
+    <div class="detail-meta">
+      <span>🍜 6 種經典</span>
+      <span>⭐ 必吃推薦</span>
+    </div>
+  </header>
+
+  <!-- 美食卡片 -->
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+        <!-- 北京烤鴨 -->
+        <div class="card food-card">
+          <a href="food-detail.html">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop" alt="北京烤鴨">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">經典</span>
+              <h3 class="card-title">北京烤鴨</h3>
+              <p class="card-text">以果木火烤，皮脆肉嫩，配以蔥段、黃瓜、甜麵醬</p>
+              <div class="card-meta">
+                <span>⭐ 4.9</span>
+                <span>¥100-300</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 老北京炸醬麵 -->
+        <div class="card food-card">
+          <a href="food-detail.html">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop" alt="炸醬麵">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">麵食</span>
+              <h3 class="card-title">老北京炸醬麵</h3>
+              <p class="card-text">手搟麵條配上炸醬、黃瓜絲、豆芽菜</p>
+              <div class="card-meta">
+                <span>⭐ 4.7</span>
+                <span>¥25-50</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 豆汁焦圈 -->
+        <div class="card food-card">
+          <a href="food-detail.html">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop" alt="豆汁">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">小吃</span>
+              <h3 class="card-title">豆汁焦圈</h3>
+              <p class="card-text">老北京傳統早點，豆汁配焦圈，地道北京味</p>
+              <div class="card-meta">
+                <span>⭐ 4.5</span>
+                <span>¥15-30</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 涮羊肉 -->
+        <div class="card food-card">
+          <a href="food-detail.html">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop" alt="涮羊肉">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">火鍋</span>
+              <h3 class="card-title">老北京涮羊肉</h3>
+              <p class="card-text">銅鍋炭火，手切羊肉，配芝麻醬</p>
+              <div class="card-meta">
+                <span>⭐ 4.8</span>
+                <span>¥80-200</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 艾窩窩 -->
+        <div class="card food-card">
+          <a href="food-detail.html">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop" alt="艾窩窩">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">甜點</span>
+              <h3 class="card-title">艾窩窩</h3>
+              <p class="card-text">糯米製成的傳統小吃，軟糯香甜</p>
+              <div class="card-meta">
+                <span>⭐ 4.4</span>
+                <span>¥10-20</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 炒肝兒 -->
+        <div class="card food-card">
+          <a href="food-detail.html">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop" alt="炒肝">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">小吃</span>
+              <h3 class="card-title">炒肝兒</h3>
+              <p class="card-text">豬肝配大腸勾芡湯汁，老北京經典早餐</p>
+              <div class="card-meta">
+                <span>⭐ 4.3</span>
+                <span>¥15-25</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h4>北京質感旅遊</h4>
+        <p style="opacity: 0.8; line-height: 1.8;">探索千年古都的奢華風貌，體驗不一樣的北京之旅。</p>
+      </div>
+      <div>
+        <h4>快速連結</h4>
+        <ul class="footer-links">
+          <li><a href="spots.html">景點推薦</a></li>
+          <li><a href="foods.html">美食推薦</a></li>
+          <li><a href="itinerary.html">行程安排</a></li>
+          <li><a href="info.html">實用資訊</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>實用資訊</h4>
+        <ul class="footer-links">
+          <li><a href="info.html">簽證須知</a></li>
+          <li><a href="info.html">交通指南</a></li>
+          <li><a href="info.html">天氣資訊</a></li>
+          <li><a href="info.html">緊急聯絡</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 北京質感旅遊. Designed with ♥ in Taiwan.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      var navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
