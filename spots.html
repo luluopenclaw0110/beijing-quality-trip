@@ -6,17 +6,20 @@
   <title>景點列表 | 北京質感旅遊</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- 導航 -->
   <nav class="nav">
     <div class="nav-container">
-      <a href="index.html" class="logo">北京質感之旅</a>
+      <a href="index.html" class="logo">
+        <span class="logo-icon">❋</span>
+        北京質感之旅
+      </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">首頁</a></li>
-        <li><a href="spots.html">景點</a></li>
+        <li><a href="spots.html" class="nav-active">景點</a></li>
         <li><a href="foods.html">美食</a></li>
         <li><a href="itinerary.html">行程</a></li>
         <li><a href="info.html">資訊</a></li>
@@ -52,17 +55,17 @@
       <!-- 景點卡片 Grid -->
       <div class="card-grid" id="spotsGrid">
         <!-- 故宮 -->
-        <div class="card" data-category="palace">
+        <div class="card animate animate-delay-1" data-category="palace">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="故宮">
+              <img src="https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=400&h=300&fit=crop" alt="故宮" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">宮殿</span>
               <h3 class="card-title">北京故宮</h3>
               <p class="card-text">明清兩代皇室宮殿，世界上規模最大的木質結構古建築群</p>
               <div class="card-meta">
-                <span>⭐ 4.9</span>
+                <span class="card-rating">⭐ 4.9</span>
                 <span>北京市中心</span>
               </div>
             </div>
@@ -70,17 +73,17 @@
         </div>
 
         <!-- 八達嶺長城 -->
-        <div class="card" data-category="temple">
+        <div class="card animate animate-delay-2" data-category="temple">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="八達嶺長城">
+              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="八達嶺長城" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">古蹟</span>
               <h3 class="card-title">八達嶺長城</h3>
               <p class="card-text">「不到長城非好漢」象徵中華民族的偉大意志</p>
               <div class="card-meta">
-                <span>⭐ 4.8</span>
+                <span class="card-rating">⭐ 4.8</span>
                 <span>延慶區</span>
               </div>
             </div>
@@ -88,17 +91,17 @@
         </div>
 
         <!-- 天壇 -->
-        <div class="card" data-category="temple">
+        <div class="card animate animate-delay-3" data-category="temple">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="天壇">
+              <img src="https://images.unsplash.com/photo-1537873138469-4d8b53c2c5b3?w=400&h=300&fit=crop" alt="天壇" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">古蹟</span>
               <h3 class="card-title">天壇公園</h3>
               <p class="card-text">皇帝祭天祈谷的聖地，聯合國教科文組織世界遺產</p>
               <div class="card-meta">
-                <span>⭐ 4.9</span>
+                <span class="card-rating">⭐ 4.9</span>
                 <span>東城區</span>
               </div>
             </div>
@@ -106,17 +109,17 @@
         </div>
 
         <!-- 頤和園 -->
-        <div class="card" data-category="park">
+        <div class="card animate animate-delay-4" data-category="park">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="頤和園">
+              <img src="https://images.unsplash.com/photo-1580637249871-a11f76463068?w=400&h=300&fit=crop" alt="頤和園" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">園林</span>
               <h3 class="card-title">頤和園</h3>
               <p class="card-text">清代皇家園林，以昆明湖、萬壽山為勝景</p>
               <div class="card-meta">
-                <span>⭐ 4.8</span>
+                <span class="card-rating">⭐ 4.8</span>
                 <span>海淀區</span>
               </div>
             </div>
@@ -124,17 +127,17 @@
         </div>
 
         <!-- 北海公園 -->
-        <div class="card" data-category="park">
+        <div class="card animate animate-delay-5" data-category="park">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="北海公園">
+              <img src="https://images.unsplash.com/photo-1591527294419-b8e2cboacd91?w=400&h=300&fit=crop" alt="北海公園" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">園林</span>
               <h3 class="card-title">北海公園</h3>
               <p class="card-text">中國最古老的皇家園林之一，以白塔聞名</p>
               <div class="card-meta">
-                <span>⭐ 4.7</span>
+                <span class="card-rating">⭐ 4.7</span>
                 <span>西城區</span>
               </div>
             </div>
@@ -142,17 +145,17 @@
         </div>
 
         <!-- 雍和宮 -->
-        <div class="card" data-category="temple">
+        <div class="card animate animate-delay-6" data-category="temple">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="雍和宮">
+              <img src="https://images.unsplash.com/photo-1548560781-a74af3769236?w=400&h=300&fit=crop" alt="雍和宮" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">古蹟</span>
               <h3 class="card-title">雍和宮</h3>
               <p class="card-text">原為雍正皇帝府邸，現為藏傳佛教寺庙</p>
               <div class="card-meta">
-                <span>⭐ 4.6</span>
+                <span class="card-rating">⭐ 4.6</span>
                 <span>東城區</span>
               </div>
             </div>
@@ -160,17 +163,17 @@
         </div>
 
         <!-- 孔廟 -->
-        <div class="card" data-category="temple">
+        <div class="card animate animate-delay-7" data-category="temple">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="孔廟">
+              <img src="https://images.unsplash.com/photo-1580699221868-968a61c02b0f?w=400&h=300&fit=crop" alt="孔廟" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">古蹟</span>
               <h3 class="card-title">孔廟國子監</h3>
               <p class="card-text">祭祀孔子及古代最高學府</p>
               <div class="card-meta">
-                <span>⭐ 4.5</span>
+                <span class="card-rating">⭐ 4.5</span>
                 <span>東城區</span>
               </div>
             </div>
@@ -178,17 +181,17 @@
         </div>
 
         <!-- 恭王府 -->
-        <div class="card" data-category="palace">
+        <div class="card animate animate-delay-8" data-category="palace">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="恭王府">
+              <img src="https://images.unsplash.com/photo-1570889922376-d5c03b3c1a81?w=400&h=300&fit=crop" alt="恭王府" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">宮殿</span>
               <h3 class="card-title">恭王府</h3>
               <p class="card-text">清代恭親王奕訢府邸，有「什剎海明珠」之稱</p>
               <div class="card-meta">
-                <span>⭐ 4.7</span>
+                <span class="card-rating">⭐ 4.7</span>
                 <span>西城區</span>
               </div>
             </div>
@@ -196,17 +199,17 @@
         </div>
 
         <!-- 798藝術區 -->
-        <div class="card" data-category="modern">
+        <div class="card animate animate-delay-9" data-category="modern">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="798藝術區">
+              <img src="https://images.unsplash.com/photo-1560421683-685e54814e1c?w=400&h=300&fit=crop" alt="798藝術區" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">現代</span>
               <h3 class="card-title">798藝術區</h3>
               <p class="card-text">原工廠改造的藝術園區，匯集當代藝術展覽</p>
               <div class="card-meta">
-                <span>⭐ 4.6</span>
+                <span class="card-rating">⭐ 4.6</span>
                 <span>朝陽區</span>
               </div>
             </div>
@@ -214,17 +217,17 @@
         </div>
 
         <!-- 鳥巢 -->
-        <div class="card" data-category="modern">
+        <div class="card animate animate-delay-10" data-category="modern">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="鳥巢">
+              <img src="https://images.unsplash.com/photo-1577648188715-99c0c3f4c59a?w=400&h=300&fit=crop" alt="鳥巢" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">現代</span>
               <h3 class="card-title">國家體育場</h3>
               <p class="card-text">2008北京奧運主場館，外形如鳥巢</p>
               <div class="card-meta">
-                <span>⭐ 4.7</span>
+                <span class="card-rating">⭐ 4.7</span>
                 <span>朝陽區</span>
               </div>
             </div>
@@ -232,17 +235,17 @@
         </div>
 
         <!-- 圓明園 -->
-        <div class="card" data-category="park">
+        <div class="card animate animate-delay-11" data-category="park">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="圓明園">
+              <img src="https://images.unsplash.com/photo-1599587428489-0c6778433d2c?w=400&h=300&fit=crop" alt="圓明園" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">園林</span>
               <h3 class="card-title">圓明園</h3>
               <p class="card-text">「萬園之園」，虽遭破壞但仍值得憑吊</p>
               <div class="card-meta">
-                <span>⭐ 4.5</span>
+                <span class="card-rating">⭐ 4.5</span>
                 <span>海淀區</span>
               </div>
             </div>
@@ -250,17 +253,17 @@
         </div>
 
         <!-- 天安門廣場 -->
-        <div class="card" data-category="modern">
+        <div class="card animate animate-delay-12" data-category="modern">
           <a href="spot-detail.html">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400&h=300&fit=crop" alt="天安門廣場">
+              <img src="https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?w=400&h=300&fit=crop" alt="天安門廣場" loading="lazy">
             </div>
             <div class="card-body">
               <span class="card-tag">現代</span>
               <h3 class="card-title">天安門廣場</h3>
               <p class="card-text">世界上最大的城市廣場之一</p>
               <div class="card-meta">
-                <span>⭐ 4.8</span>
+                <span class="card-rating">⭐ 4.8</span>
                 <span>東城區</span>
               </div>
             </div>
@@ -274,7 +277,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div>
-        <h4>北京質感旅遊</h4>
+        <h4 class="footer-logo">❋ 北京質感旅遊</h4>
         <p style="opacity: 0.8; line-height: 1.8;">探索千年古都的奢華風貌，體驗不一樣的北京之旅。</p>
       </div>
       <div>
@@ -322,6 +325,9 @@
         cards.forEach(function(card) {
           if (filter === 'all' || card.getAttribute('data-category') === filter) {
             card.style.display = 'block';
+            card.style.animation = 'none';
+            card.offsetHeight;
+            card.style.animation = '';
           } else {
             card.style.display = 'none';
           }
