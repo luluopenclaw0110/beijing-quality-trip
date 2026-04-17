@@ -6,20 +6,22 @@
   <title>實用資訊 | 北京質感旅遊</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- 導航 -->
   <nav class="nav">
     <div class="nav-container">
-      <a href="index.html" class="logo">北京質感之旅</a>
+      <a href="index.html" class="logo">
+        <span class="logo-icon">❋</span>
+        北京質感之旅
+      </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">首頁</a></li>
         <li><a href="spots.html">景點</a></li>
         <li><a href="foods.html">美食</a></li>
         <li><a href="itinerary.html">行程</a></li>
-        <li><a href="info.html">資訊</a></li>
+        <li><a href="info.html" class="nav-active">資訊</a></li>
       </ul>
       <div class="nav-toggle" onclick="toggleNav()">
         <span></span>
@@ -29,7 +31,6 @@
     </div>
   </nav>
 
-  <!-- Header -->
   <header class="detail-header">
     <h1>實用資訊</h1>
     <div class="detail-meta">
@@ -39,10 +40,8 @@
     </div>
   </header>
 
-  <!-- Info Content -->
   <section class="info-section">
     <div class="info-container">
-      <!-- 簽證 -->
       <div class="info-block">
         <h3>📋 簽證須知</h3>
         <ul>
@@ -54,7 +53,6 @@
         </ul>
       </div>
 
-      <!-- 交通 -->
       <div class="info-block">
         <h3>🚇 交通指南</h3>
         <ul>
@@ -66,19 +64,17 @@
         </ul>
       </div>
 
-      <!-- 天氣 -->
       <div class="info-block">
         <h3>🌤️ 北京天氣</h3>
         <ul>
           <li><strong>春季（3-5月）</strong>：天氣干燥，多風沙，溫度 10-25°C</li>
-          <li><strong>夏季（6-8月</strong>：炎熱多雨，溫度 25-35°C，最高可达 40°C</li>
+          <li><strong>夏季（6-8月）</strong>：炎熱多雨，溫度 25-35°C，最高可達 40°C</li>
           <li><strong>秋季（9-11月）</strong>：最適合旅遊，天氣晴朗，溫度 10-20°C</li>
           <li><strong>冬季（12-2月）</strong>：寒冷乾燥，溫度 -10 到 5°C，需備寒衣</li>
           <li><strong>建議攜帶</strong>：防曬、保濕、帽子、圍巾</li>
         </ul>
       </div>
 
-      <!-- 緊急聯絡 -->
       <div class="info-block">
         <h3>🚨 緊急聯絡</h3>
         <ul>
@@ -90,7 +86,6 @@
         </ul>
       </div>
 
-      <!-- 時差 -->
       <div class="info-block">
         <h3>🕐 時差與語言</h3>
         <ul>
@@ -104,11 +99,10 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div>
-        <h4>北京質感旅遊</h4>
+        <h4 class="footer-logo">❋ 北京質感旅遊</h4>
         <p style="opacity: 0.8; line-height: 1.8;">探索千年古都的奢華風貌，體驗不一樣的北京之旅。</p>
       </div>
       <div>
