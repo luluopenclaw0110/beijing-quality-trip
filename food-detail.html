@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美食詳情 | 北京質感旅遊</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 導航 -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">北京質感之旅</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="spots.html">景點</a></li>
+        <li><a href="foods.html">美食</a></li>
+        <li><a href="itinerary.html">行程</a></li>
+        <li><a href="info.html">資訊</a></li>
+      </ul>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="detail-header">
+    <h1>北京烤鴨</h1>
+    <div class="detail-meta">
+      <span>⭐ 4.9</span>
+      <span>🍜 經典京菜</span>
+    </div>
+  </header>
+
+  <!-- Detail Content -->
+  <section class="detail-content">
+    <div class="detail-grid">
+      <div class="detail-info">
+        <h3>基本資訊</h3>
+        <p><span>類型</span><span>烤製菜</span></p>
+        <p><span>人均</span><span>¥100-300</span></p>
+        <p><span>地址</span><span>各分店</span></p>
+        <p><span>預設</span><span>建議提前訂位</span></p>
+        <p><span>招牌</span><span>全聚德、利群</span></p>
+      </div>
+      <div class="detail-description">
+        <h3>美食介紹</h3>
+        <p>北京烤鴨是北京最負盛名的傳統美食，以其皮脆肉嫩、色澤誘人聞名於世。採用填餵方法培育的北京鴨，用果木炭火烤製，烤出的鴨子皮層酥脆，肉質鮮嫩。</p>
+        <br>
+        <p>傳統吃法是將烤鴨片成薄片，配以蔥段、黃瓜條和甜麵醬，用薄餅包裹食用。烤鴨的油脂分布均勻，入口即化，香氣撲鼻。</p>
+        <br>
+        <p>最著名的烤鴨店包括全聚德、利群、便宜坊等，其中全聚德創於1864年，有「天下第一美」之美譽。</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="foods.html" class="back-link">← 返回美食列表</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h4>北京質感旅遊</h4>
+        <p style="opacity: 0.8; line-height: 1.8;">探索千年古都的奢華風貌，體驗不一樣的北京之旅。</p>
+      </div>
+      <div>
+        <h4>快速連結</h4>
+        <ul class="footer-links">
+          <li><a href="spots.html">景點推薦</a></li>
+          <li><a href="foods.html">美食推薦</a></li>
+          <li><a href="itinerary.html">行程安排</a></li>
+          <li><a href="info.html">實用資訊</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>實用資訊</h4>
+        <ul class="footer-links">
+          <li><a href="info.html">簽證須知</a></li>
+          <li><a href="info.html">交通指南</a></li>
+          <li><a href="info.html">天氣資訊</a></li>
+          <li><a href="info.html">緊急聯絡</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 北京質感旅遊. Designed with ♥ in Taiwan.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      var navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
